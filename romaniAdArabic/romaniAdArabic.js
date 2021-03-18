@@ -1,7 +1,7 @@
 function convertToRoman(num) {
 
 	//Roman numerals to Arabic numerals dictionary
-	const romaniAdArabic {
+	const romaniAdArabic = {
 
 		I:1,
 		V:5,
@@ -13,13 +13,23 @@ function convertToRoman(num) {
 
 	};
 
+	let numberSplit = [];
+
 	//convert integer to a string
 	num = num.toString()
 
-	//Split string into an array of strings
+	//split num into an array
+	num = num.split("");
+
+	console.log(num);
+
+	//use if statements and length methods to match each
+	//value in the array to the values in the romani library 
+
 
 	//console.log(typeof(num));
 
 }
 
-convertToRoman(15);
+convertToRoman(158);
+//console.log(typeof(convertToRoman(15)));
